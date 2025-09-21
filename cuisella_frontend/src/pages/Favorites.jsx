@@ -39,7 +39,7 @@ const Favorites = () => {
   if (error) return <p className="pt-20 text-center text-red-500 font-semibold">{error}</p>
 
   return (
-    <div className="bg-[#EFE4D2] min-h-screen px-4 py-8 mt-16">
+    <div className="bg-[#EFE4D2] min-h-screen px-4 py-8 mt-16 ">
       {message && <div className="fixed top-5 right-5 bg-[#E6521F] text-white px-4 py-2 rounded shadow-lg z-50">{message}</div>}
 
       <div className="max-w-6xl mx-auto">
@@ -51,7 +51,7 @@ const Favorites = () => {
             <Link to="/recipes" className="text-[#CA7842] hover:text-[#954C2E] font-medium">Explore Recipes →</Link>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 py-10">
             {favorites.map(({ id, recipe }) => (
               <div key={id} className="relative bg-[#F1EFEC] rounded-3xl shadow-md pt-24 px-5 pb-5 flex flex-col">
                 {recipe.image_path && (
