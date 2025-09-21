@@ -6,14 +6,28 @@
 ![Screenshot 6](screenshot6.jpg)
 ![Screenshot 7](screenshot7.jpg)
 ![Screenshot 8](screenshot8.jpg)
-**Installation**
-Backend (Laravel)
-composer install
-cp .env.example .env
-# Configure database in .env
-php artisan migrate
-php artisan serve
-Frontend (React)
-npm install
-npm run dev
 
+# Installation
+
+# Backend (Laravel)
+
+# Install dependencies
+composer install
+
+# Copy and configure environment file
+cp .env.example .env
+# Edit .env to set your database credentials
+
+# Run migrations
+php artisan migrate
+
+# Start the Laravel server
+php artisan serve
+
+# Frontend (React)
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
