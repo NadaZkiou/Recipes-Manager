@@ -6,3 +6,14 @@
 ![Screenshot 6](screenshot6.jpg)
 ![Screenshot 7](screenshot7.jpg)
 ![Screenshot 8](screenshot8.jpg)
+**Installation**
+Backend (Laravel)
+composer install
+cp .env.example .env
+# Configure database in .env
+php artisan migrate
+php artisan serve
+Frontend (React)
+npm install
+npm run dev
+
